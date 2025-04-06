@@ -34,7 +34,7 @@ When you run the notebook, Gambot will load these credentials to authenticate bo
 The private key can be found in your Polymarket account by navigating to Settings > Export Private Key. The public address (funder) is publicly available on your Polymarket profile.
 
 #### Where to find Pinnacle API Credentials
-You will need to subscribe to an API to pull the Pinnacle data. Gambot has been configured to us this API - [Pinncale Data API](https://rapidapi.com/tipsters/api/pinnacle-odds). Gambot makes a lot of calls to the API, so the Mega Unlimited Plan is typically what I would advise.
+You will need to subscribe to an API to pull the Pinnacle data. Gambot has been configured to us this API - [Pinncale Data API](https://bit.ly/4inkWMN). Gambot makes a lot of calls to the API, so the Mega Unlimited Plan is typically what I would advise.
 
 ### Set Trading Parameters
 You can fine-tune Gambot’s behavior by adjusting parameters in the code. Below are the most critical parameters to consider:
