@@ -1,6 +1,6 @@
 # Gambot: Automated Sports Betting on Polymarket
 ## Overview
-Gambot is an open-source trading bot that identifies profitable sports betting opportunities and executes them on [Polymarket](https://polymarket.com/). By pulling market data from sharp sportsbooks (like [Pinnacle](https://www.pinnacle.com/en/)) and comparing against Polymarket, Gambot leverages a probabilistic modeling approach and Kelly Criterion bet sizing to pursue long-term capital growth.
+Gambot is an open-source trading bot that identifies profitable sports betting opportunities and executes them on [Polymarket](https://polymarket.com/). By pulling market data from sharp sportsbooks (like [Pinnacle](https://www.pinnacle.com/en/)), removing the house edge to determine the sportsbook's "true" view on odds and comparing against Polymarket, Gambot leverages a probabilistic modeling approach and Kelly Criterion bet sizing to pursue long-term capital growth.
 This bot is essentially a replication of how [OddsJam](https://oddsjam.com/?ref=mzawnti) identifies value bets on notable sportsbooks, adapted to the peer-to-peer format of Polymarket. To learn more about the underlying methodology, [OddsJam](https://oddsjam.com/?ref=mzawnti) has a wealth or resources on their website.
 
 ### If this project saves you time and adds value, please consider sponsoring on GitHub or donating via our Crypto Wallet (details below).
