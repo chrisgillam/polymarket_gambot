@@ -39,17 +39,17 @@ You will need to subscribe to an API to pull the Pinnacle data. Gambot has been 
 ### Set Trading Parameters
 You can fine-tune Gambot’s behavior by adjusting parameters in the code. Below are the most critical parameters to consider:
 
-- LOG_LEVEL_ENV: Sets the level of detail in the output (e.g., DISABLED, DEBUG, INFO).
+- LOG_LEVEL_ENV: Sets the level of detail in the output (e.g., DISABLED, DEBUG, INFO). INFO ensures you capture essential updates/trade logs, but DEBUG can create a lot of spam. Start with DEBUG if you’re refining the code, then switch to INFO or DISABLED in production.
 - SCRIPT_MODES: Dictates which sports or markets are in scope during a run.
 - INCLUDE_LIVE: Determines if the bot will place bets on live games. Due to execution lag, live betting can be risky. It’s recommended to keep this FALSE.
-- MAXIMIMUM_PINNACLE_TRUE_PROBABILITY: Defines the shortest odds (highest probability) Gambot will bet on.
-- MINIMUM_PINNACLE_TRUE_PROBABILITY: Defines the longest odds (lowest probability) Gambot will bet on.
-- MAX_PERCENTAGE_BET: Sets a guardrail on the maximum percentage of your bankroll you can place on a single bet.
-- MAX_DOLLAR_BET: Caps the maximum dollar amount for any individual bet. If you are starting with a big bankroll, make sure this is high enough so that trades will execute.
+- MAXIMIMUM_PINNACLE_TRUE_PROBABILITY: Defines the shortest odds (highest probability) Gambot will bet on. Avoid extremely short‐priced favorites (like 90%+). The potential edges are usually smaller, and a single upset can wipe out many small gains.
+- MINIMUM_PINNACLE_TRUE_PROBABILITY: Defines the longest odds (lowest probability) Gambot will bet on. Very low‐probability underdogs are often priced with huge spreads and are more volatile. They can still be profitable if you have a big edge—but they’re also more prone to zero‐out your bet.
+- MAX_PERCENTAGE_BET: Sets a guardrail on the maximum percentage of your bankroll you can place on a single bet. This is typically already managed by the kelly_multiplier, but was built into the code as a failsafe.
+- MAX_DOLLAR_BET: Caps the maximum dollar amount for any individual bet. If you are starting with a big bankroll, make sure this is high enough so that trades will execute. This is typically already managed by the kelly_multiplier, but was built into the code as a failsafe.
 - time_interval: The pause (in seconds) after each trading cycle.
-- kelly_multiplier: Scales the Kelly optimal bet size by a factor of 0 to 1. A value of 1 is fully Kelly (aggressive), and lower values reduce the bet size to mitigate risk.
+- kelly_multiplier: Scales the Kelly optimal bet size by a factor of 0 to 1. A value of 1 is fully Kelly (aggressive), and lower values reduce the bet size to mitigate risk. A full‐Kelly (1.0) approach can be very volatile. Most traders scale Kelly down for less drawdown while still benefiting from Kelly’s growth principles.
 - target_buy_ev: The minimum edge (EV) you want before placing a buy bet. For example, a value of 0.05 means that the true probability of a team winning is 5% higher than where they are priced on Polymarket. 3-8% looks like the sweet spot.
-- target_sell_ev: The minimum edge (EV) you want before selling a bet. For example, a value of 0.05 means that the true probability of a team winning is 5% lower than where they are priced on Polymarket.
+- target_sell_ev: The minimum edge (EV) you want before selling a bet. For example, a value of 0.05 means that the true probability of a team winning is 5% lower than where they are priced on Polymarket. Set to 0.99 to effectively disable selling.
 - sportname_week: The specific week listing for that sport on Polymarket (e.g., NFL_week, NBA_week).
 
 Ensure these parameters align with your risk tolerance and strategy objectives before running the bot.
