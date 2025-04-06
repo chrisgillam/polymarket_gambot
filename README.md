@@ -72,7 +72,7 @@ If Gambot saves you time and helps generate positive returns, consider giving me
 Click the “Sponsor” button at the top of this repository for a one-time donation.
 
 #### Crypto Donations
-You can send any coin to our Coinbase Wallet address:
+You can send coins to the following addresses:
 - USDC: 0xD3b578af99e01A21B6303232BdE4a8B4CC66deFA
 - Etherium (ETH) Classic: 0xbF2eFD75458238560c46436d2334df543eD87584
 - Bitcoin (BTC): 3QHG3pq1ShFpcBdMYpzqsGtPyUVdKkfuBk
