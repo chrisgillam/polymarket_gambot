@@ -4,6 +4,7 @@ Gambot is an open-source trading bot that identifies profitable sports betting o
 This bot is essentially a replication of how [OddsJam](https://oddsjam.com/?ref=mzawnti) identifies value bets on notable sportsbooks, adapted to the peer-to-peer format of Polymarket. To learn more about the underlying methodology, [OddsJam](https://oddsjam.com/?ref=mzawnti) has a wealth or resources on their website.
 
 ### If this project saves you time and adds value, please consider sponsoring on GitHub or donating via our Crypto Wallet (details below).
+[![Sponsor](https://img.shields.io/badge/sponsor-%F0%9F%92%B8-brightgreen)](https://github.com/sponsors/chrisgillam)
 
 ## Introduction
 Sports betting markets often present mispriced odds. Sharp sportsbooks like Pinnacle are generally efficient at pricing, so comparing their implied probability to that of Polymarket can reveal edges. Gambot automates this comparison and calculates stake sizes through the Kelly Criterion to optimize growth over time.
@@ -70,7 +71,8 @@ Keep an eye on the output logs (according to the LOG_LEVEL_ENV you’ve set). Th
 If Gambot saves you time and helps generate positive returns, consider giving me a tip :) 
 
 #### GitHub Sponsors
-Click the “Sponsor” button at the top of this repository for a one-time donation.
+Click the “Sponsor” button here or at the top of this repository for a one-time donation.
+[![Sponsor](https://img.shields.io/badge/sponsor-%F0%9F%92%B8-brightgreen)](https://github.com/sponsors/chrisgillam)
 
 #### Crypto Donations
 You can send coins to the following addresses:
