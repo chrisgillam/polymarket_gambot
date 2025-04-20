@@ -19,6 +19,7 @@ Automated Market Scanning: Constantly checks Polymarket odds against sharp sport
 - Data Collection: Gambot queries Pinnacle for sharp odds, then retrieves Polymarket prices in real time.
 - Probability Estimation: By comparing implied probabilities, Gambot flags situations where Polymarket’s market prices differ significantly from the baseline “true” odds.
 - Kelly Criterion Calculation: Once an opportunity is found, the bot calculates the optimal stake size using Kelly Criterion formulas—adjustable for risk tolerance—to aim for long-term growth.
+- Orders: Gambot sends fill‑or‑kill (FOK) orders when placing trades on Polymarket. With an FOK order the position is filled immediately and in full at the quoted price, or cancelled entirely. This prevents partial fills, avoids price slippage, and guarantees that the Kelly‑calculated stake size is executed exactly as intended, keeping bankroll risk tightly controlled.
 
 ## Usage
 ### Configure Credentials
